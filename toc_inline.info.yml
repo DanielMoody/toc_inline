@@ -1,0 +1,7 @@
+name: ToC Inline
+type: module
+description: 'Adds a [toc] token that generates a table of contents from headings.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:filter
