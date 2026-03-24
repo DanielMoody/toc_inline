@@ -1,0 +1,37 @@
+<?php
+
+declare(strict_types=1);
+
+use Drupal\filter\Entity\FilterFormat;
+/** * Implements hook_install(). */
+
+
+function toc_inline_install(): void {
+  $format_ids = ['basic_html', 'full_html'];
+
+  foreach ($format_ids as $format_id) {
+    $format = \Drupal\filter\Entity\FilterFormat::load($format_id);
+
+    if (!$format) {
+      continue;
+    }
+
+    $filters = $format->get('filters');
+
+    // If already present, skip.
+    if (isset($filters['toc_inline_filter'])) {
+      continue;
+    }
+
+    $filters['toc_inline_filter'] = [
+      'id' => 'toc_inline_filter',
+      'provider' => 'toc_inline',
+      'status' => TRUE,
+      'weight' => 10,
+      'settings' => [],
+    ];
+
+    $format->set('filters', $filters);
+    $format->save();
+  }
+}
