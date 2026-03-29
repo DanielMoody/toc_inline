@@ -1,0 +1,19 @@
+{
+  "name": "cms_alchemy/toc_inline",
+  "description": "Adds a [toc] token that generates a table of contents from headings in Drupal content.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^10 || ^11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\toc_inline\\": "src/"
+    }
+  },
+  "extra": {
+    "drupal": {
+      "package": "Custom"
+    }
+  }
+}
