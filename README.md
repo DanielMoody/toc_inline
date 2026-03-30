@@ -12,8 +12,7 @@ It is designed for editorial convenience—drop a token, get a working ToC with 
 
 Install via Composer:
 
-```bash
-composer require cms-alchemy/toc-inline
+`composer require cms-alchemy/toc-inline`
 
 ## Features
 
