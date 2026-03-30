@@ -8,6 +8,13 @@ ToC Inline is a lightweight Drupal filter plugin that scans rendered HTML for he
 
 It is designed for editorial convenience—drop a token, get a working ToC with anchor links. No blocks, no Views, no extra configuration overhead.
 
+## Installation
+
+Install via Composer:
+
+```bash
+composer require cms-alchemy/toc-inline
+
 ## Features
 
 - Uses `[toc]` token anywhere in content
