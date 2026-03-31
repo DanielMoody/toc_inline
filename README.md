@@ -10,7 +10,6 @@ It is designed for editorial convenience—drop a token, get a working ToC with 
 
 ## Installation
 
-Install via Composer:
 
 ```
 composer require cms-alchemy/toc-inline-finder
